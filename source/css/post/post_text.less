@@ -1,0 +1,77 @@
+.box(@ver: vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+
+.whb(@w,
+@h,
+@bg) {
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+
+.main-wrap{
+    .box;
+    header{
+        .whb(100%,2.1rem,none);
+        border-bottom: 1px solid #dcdcdc;
+        .box(horizontal);
+        text-align: center;
+        line-height: 2.1rem;
+        .close{
+            padding: 0 0.6rem;
+            .icon{
+                font-size: 0.8rem;
+                color: #909aa3;
+            }
+        }
+        .chose{
+            -webkit-box-flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &>ul{
+                .whb(9.15rem,1.1rem,none);
+                .box(horizontal);
+                line-height: 1.1rem;
+                border: 1px solid #1f87e0;
+                border-radius: 0.15rem;
+                &>li{
+                    -webkit-box-flex: 1;
+                    border-right: 1px solid #1f87e0;
+                    &:nth-of-type(3){
+                        border: none;
+                    }
+                  &>a{
+                      color: #939698;
+                      font-size: 0.55rem;
+                  }  
+                }
+                .add_color{
+                    background: #1f87e0;
+                   &>a{
+                       color: white;
+                   }
+                }
+            }
+        }
+        .issue{
+            padding: 0 0.6rem;
+            &>button{
+                .whb(1.8rem,1.1rem,#1f87e0);
+                border: none;
+                outline: none;
+                line-height: 1.1rem;
+                border-radius: 0.15rem;
+                &>a{
+                    font-size: 0.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    section{
+        
+    }
+}

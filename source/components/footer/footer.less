@@ -1,0 +1,64 @@
+.box(@ver: vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+
+.whb(@w,
+@h,
+@bg) {
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+
+.footer {
+    .box(horizontal);
+    .whb(100%,
+    2.6rem,
+    #fff);
+    position: fixed;
+    bottom: 0; //13rem
+    left: 0;
+    border-bottom: 1px solid #dcdcdc;
+    background:#fff url(//i1.dd-img.com/assets/image/1497952298-536c350ff31be95d-640w-19h.png) no-repeat center top;
+    background-size: 100%;
+    &>dl {
+        margin-top: 0.4rem;
+        padding: 0.4rem 0;
+        text-align: center;
+        -webkit-box-flex: 1;
+        width: 0;
+        &>dt {
+            .icon {
+                font-size: 2rem;
+            }
+            img {
+                .whb(0.8rem,
+                auto,
+                none);
+            }
+            .add {
+                display: inline-block;
+                .whb(2rem,
+                2rem,
+                #1f87e0);
+                border-radius: 50%;
+                line-height: 2rem;
+                box-sizing: border-box;
+                margin-top: -0.5rem;
+                .icon{
+                    color: white;
+                    font-size: 1rem;
+                }
+            }
+        }
+        &>dd {
+            font-size: 0.5rem;
+            color: #8c8c8c;
+            line-height: 0.8rem;
+        }
+        .add_color{
+            color: #1f87e0;
+        }
+    }
+}

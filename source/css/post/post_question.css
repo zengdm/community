@@ -1,0 +1,70 @@
+.main-wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main-wrap header {
+  width: 100%;
+  height: 2.1rem;
+  background-color: none;
+  border-bottom: 1px solid #dcdcdc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 2.1rem;
+}
+.main-wrap header .close {
+  padding: 0 0.6rem;
+}
+.main-wrap header .close .icon {
+  font-size: 0.8rem;
+  color: #909aa3;
+}
+.main-wrap header .chose {
+  -webkit-box-flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrap header .chose > ul {
+  width: 9.15rem;
+  height: 1.1rem;
+  background-color: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 1.1rem;
+  border: 1px solid #1f87e0;
+  border-radius: 0.15rem;
+}
+.main-wrap header .chose > ul > li {
+  -webkit-box-flex: 1;
+  border-right: 1px solid #1f87e0;
+}
+.main-wrap header .chose > ul > li:nth-of-type(3) {
+  border: none;
+}
+.main-wrap header .chose > ul > li > a {
+  color: #939698;
+  font-size: 0.55rem;
+}
+.main-wrap header .chose > ul .add_color {
+  background: #1f87e0;
+}
+.main-wrap header .chose > ul .add_color > a {
+  color: white;
+}
+.main-wrap header .issue {
+  padding: 0 0.6rem;
+}
+.main-wrap header .issue > button {
+  width: 1.8rem;
+  height: 1.1rem;
+  background-color: #1f87e0;
+  border: none;
+  outline: none;
+  line-height: 1.1rem;
+  border-radius: 0.15rem;
+}
+.main-wrap header .issue > button > a {
+  font-size: 0.5rem;
+  color: white;
+}

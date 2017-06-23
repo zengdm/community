@@ -1,0 +1,237 @@
+.box(@ver: vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url('../../font/iconfont.eot');
+    /* IE9*/
+    src: url('../../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../font/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../../font/iconfont.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.main-wrap {
+    .box;
+    &>header {
+        .whb(100%,
+        6.1rem,
+        none);
+        background: url(//i1.dd-img.com/assets/image/1498127299-5190a681b43db680-640w-244h.png) no-repeat center center;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .head-box {
+            .box(horizontal);
+            position: absolute;
+            bottom: -1.3rem;
+            .head {
+                -webkit-box-flex: 1;
+                padding: 0 1rem;
+                bottom: -1.4rem;
+                .head-img {
+                    .whb(4.4rem,
+                    4.4rem,
+                    none);
+                    overflow: hidden;
+                    position: relative;
+                    border: 0.01rem solid #fff;
+                    border-radius: 50%;
+                    &>img {
+                        width: auto;
+                        height: 100%;
+                        position: absolute;
+                        left: -100%;
+                        top: -100%;
+                        right: -100%;
+                        bottom: -100%;
+                        margin: auto;
+                    }
+                }
+                .sex {
+                    .whb(1rem,
+                    1rem,
+                    none);
+                    position: absolute;
+                    left: 6.5rem;
+                    top: 3.5rem;
+                    z-index: 1000;
+                }
+            }
+            .attention,
+            .fans {
+                color: white;
+                font-size: 0.6rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+    &>section {
+        .box;
+        .whb(100%,auto,#f7f7f7);
+        .intro {
+            .box;
+            .whb(100%,auto,#fff);
+            text-align: center;
+            &>p {
+                font-size: 0.7rem;
+                color: #000;
+                margin-top: 1.7rem;
+            }
+            .tag {
+                margin-top: 0.5rem;
+                &>button {
+                    padding: 0.15rem 0.25rem;
+                    background-color: white;
+                    outline: none;
+                    border: 1px solid #ececec;
+                    font-size: 0.45rem;
+                    color: #adadad;
+                    border-radius: 0.1rem;
+                }
+            }
+            .state {
+                margin: 0.4rem 0 1.7rem 0;
+                &>button {
+                    .whb(5.5rem,
+                    1.2rem,
+                    #3595e6);
+                    border-radius: 0.1rem;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    font-size: 0.45rem;
+                    .iconfont {
+                        font-size: 0.45rem;
+                        margin-right: 0.25rem;
+                    }
+                }
+            }
+        }
+        .new {
+            padding: 0 0.6rem;
+            .whb(100%,auto,#fff);
+            margin-bottom: 0.5rem;
+            .new-box {
+                &>header {
+                    .iconfont {
+                        font-size: 0.7rem;
+                        color: #289cde;
+                    }
+                    &>span {
+                        font-size: 0.7rem;
+                        color: #343b41;
+                    }
+                }
+                &>section {
+                    margin-top: 1.15rem;
+                    .time {
+                        font-size: 0.45rem;
+                        color: #39bcff;
+                    }
+                    &>p{
+                        color: #343d40;
+                        font-size: 0.6rem;
+                        line-height: 0.9rem;
+                        margin: 0.5rem 0 0.7rem 0;
+                    }
+                    .photos{
+                        ul{
+                            .box(horizontal);
+                            font-size: 0;
+                            li{
+                                .whb(4.8rem,4.8rem,none);
+                                display: inline-block;
+                               margin: 0 0.2rem 0.2rem 0;
+                                a{
+                                    img{
+                                        .whb(100%,auto,none);
+                                    }
+                                }
+                            }
+                            li:nth-of-type(3n){
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .picture{
+                        margin-top: 0.5rem;
+                        .whb(100%,auto,none);
+                        position: relative;
+                        .picture-photo{
+                            img{
+                            .whb(100%,auto,none);
+                            }
+                        }
+                        
+                        .picture-title{
+                            .whb(100%,1.5rem,rgba(0,0,0,0.6));
+                            position: absolute;
+                            bottom: 0;
+                            color: #fff;
+                            font-size: 0.6rem;
+                            line-height: 1.5rem;
+                            padding: 0 0.6rem;
+                        }
+                    }
+                    .feedback{
+                        .whb(100%,1.9rem,none);
+                        line-height: 1.9rem;
+                        .box(horizontal);
+                        .feedback-car{
+                            font-size: 0.5rem;
+                            color: #939698;
+                            span{
+                                color: #00a0e9;
+                            }
+                        }
+                        .feedback-num{
+                            -webkit-box-flex: 1;
+                            font-size: 0.4rem;
+                            color: #939698;
+                            margin-left: 1.35rem;
+                            span{
+                                margin-right: 0.7rem;
+                               .iconfont{
+                                font-size: 0.4rem;
+                                margin-right: 0.15rem;
+                                color: #cccccc;
+                                } 
+                            }
+                            
+                        }
+                        .feedback-more{
+                            .iconfont{
+                                font-size: 0.4rem;
+                                margin-right: 0.15rem;
+                                color: #cccccc;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .end{
+        height: 3.4rem;
+    }
+}

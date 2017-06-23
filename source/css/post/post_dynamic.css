@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot');
+  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot?#iefix') format('embedded-opentype'), url('//assets.diandong.com/mobile/bbs/font/iconfont.woff') format('woff'), url('//assets.diandong.com/mobile/bbs/font/iconfont.ttf') format('truetype'), url('//assets.diandong.com/mobile/bbs/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main-wrap {
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.main-wrap header {
+  width: 100%;
+  height: 2.1rem;
+  background-color: none;
+  border-bottom: 1px solid #dcdcdc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 2.1rem;
+}
+.main-wrap header .close {
+  padding: 0 0.6rem;
+}
+.main-wrap header .close .icon {
+  font-size: 0.8rem;
+  color: #909aa3;
+}
+.main-wrap header .choose {
+  -webkit-box-flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrap header .choose > ul {
+  width: 9.15rem;
+  height: 1.1rem;
+  background-color: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 1.1rem;
+  border: 1px solid #1f87e0;
+  border-radius: 0.15rem;
+}
+.main-wrap header .choose > ul > li {
+  -webkit-box-flex: 1;
+  border-right: 1px solid #1f87e0;
+}
+.main-wrap header .choose > ul > li:nth-of-type(3) {
+  border: none;
+}
+.main-wrap header .choose > ul > li > a {
+  color: #939698;
+  font-size: 0.55rem;
+}
+.main-wrap header .choose > ul .add_color {
+  background: #1f87e0;
+}
+.main-wrap header .choose > ul .add_color > a {
+  color: white;
+}
+.main-wrap header .issue {
+  padding: 0 0.6rem;
+}
+.main-wrap header .issue > button {
+  width: 1.8rem;
+  height: 1.1rem;
+  background-color: #1f87e0;
+  border: none;
+  outline: none;
+  line-height: 1.1rem;
+  border-radius: 0.15rem;
+}
+.main-wrap header .issue > button > a {
+  font-size: 0.5rem;
+  color: white;
+}
+.main-wrap section {
+  -webkit-box-flex: 1;
+}
+.main-wrap section .write {
+  width: 100%;
+  height: 6.6rem;
+  background-color: #f7f7f7;
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+.main-wrap section .write > textarea {
+  width: 100%;
+  height: 5.5rem;
+  background-color: #f7f7f7;
+  border: none;
+  outline: none;
+  font-size: 0.55;
+}
+.main-wrap section .write > textarea::-webkit-input-placeholder {
+  color: #aeaeae;
+  font-size: 0.55rem;
+}
+.main-wrap section .classify-box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.7rem;
+  background-color: none;
+  padding: 0 1.1rem;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 1.7rem;
+}
+.main-wrap section .classify-box .classify {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 0.55rem;
+}
+.main-wrap section .classify-box .classify > p {
+  -webkit-box-flex: 1;
+  color: #343d40;
+}
+.main-wrap section .classify-box .classify .classify-choose span {
+  margin-right: 0.3rem;
+  color: #aeaeae;
+  text-align: right;
+}
+.main-wrap section .classify-box .classify .classify-choose .icon {
+  color: #343d40;
+}
+.main-wrap section .addition-box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.7rem;
+  background-color: none;
+  padding: 0 1.1rem;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 1.7rem;
+}
+.main-wrap section .addition-box .addition .iconfont {
+  margin-right: 2rem;
+  font-size: 0.95rem;
+}
+.choose-classify {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.choose-classify > header {
+  width: 100%;
+  height: 2.1rem;
+  background-color: none;
+  border-bottom: 1px solid #dcdcdc;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 2.1rem;
+  padding: 0 0.6rem;
+}
+.choose-classify > header .back {
+  color: #b3b9ba;
+}
+.choose-classify > header > h5 {
+  font-size: 0.7rem;
+  color: #5c6b6e;
+  -webkit-box-flex: 1;
+}
+.choose-classify > header .confirm > button {
+  width: 1.8rem;
+  height: 1.1rem;
+  background-color: #1f87e0;
+  border: none;
+  outline: none;
+  line-height: 1.1rem;
+  border-radius: 0.15rem;
+}
+.choose-classify > header .confirm > button > a {
+  font-size: 0.5rem;
+  color: white;
+}
+.choose-classify > section {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.choose-classify > section .list {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0.55rem 0.6rem 0.55rem 1.1rem;
+}
+.choose-classify > section .list .list-name {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.choose-classify > section .list .list-name p {
+  -webkit-box-flex: 1;
+  font-size: 0.55rem;
+  color: #343d40;
+}
+.choose-classify > section .list .list-num ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 0.6rem;
+}
+.choose-classify > section .list .list-num ul li {
+  margin: 0 1rem 0.5rem 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.35rem;
+}
+.choose-classify > section .list .list-num ul li a {
+  width: 2.65rem;
+  height: 1.35rem;
+  background-color: #eaeaea;
+  display: inline-block;
+  border-radius: 0.3rem;
+  color: #000000;
+  font-size: 0.55rem;
+}
+.choose-classify > section .list .list-num ul li .car_color {
+  background-color: #1f87e0;
+  color: white;
+}
+.choose-classify > section .list .list-num ul li:nth-of-type(4) {
+  margin-right: 0;
+}
+.hide {
+  display: none;
+}

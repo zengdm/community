@@ -1,0 +1,232 @@
+.box(@ver: vertical) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+
+.whb(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot');
+  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('//assets.diandong.com/mobile/bbs/font/iconfont.woff') format('woff'),
+  url('//assets.diandong.com/mobile/bbs/font/iconfont.ttf') format('truetype'),
+  url('//assets.diandong.com/mobile/bbs/font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-wrap {
+    position: relative;
+    .box;
+    header {
+        .whb(100%, 2.1rem, none);
+        border-bottom: 1px solid #dcdcdc;
+        .box(horizontal);
+        text-align: center;
+        line-height: 2.1rem;
+        .close {
+            padding: 0 0.6rem;
+            .icon {
+                font-size: 0.8rem;
+                color: #909aa3;
+            }
+        }
+        .choose {
+            -webkit-box-flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &>ul {
+                .whb(9.15rem, 1.1rem, none);
+                .box(horizontal);
+                line-height: 1.1rem;
+                border: 1px solid #1f87e0;
+                border-radius: 0.15rem;
+                &>li {
+                    -webkit-box-flex: 1;
+                    border-right: 1px solid #1f87e0;
+                    &:nth-of-type(3) {
+                        border: none;
+                    }
+                    &>a {
+                        color: #939698;
+                        font-size: 0.55rem;
+                    }
+                }
+                .add_color {
+                    background: #1f87e0;
+                    &>a {
+                        color: white;
+                    }
+                }
+            }
+        }
+        .issue {
+            padding: 0 0.6rem;
+            &>button {
+                .whb(1.8rem, 1.1rem, #1f87e0);
+                border: none;
+                outline: none;
+                line-height: 1.1rem;
+                border-radius: 0.15rem;
+                &>a {
+                    font-size: 0.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
+    section {
+        -webkit-box-flex: 1;
+        .write {
+            .whb(100%, 6.6rem, #f7f7f7);
+            padding: 0.55rem 0.65rem;
+            border-bottom: 1px solid #dcdcdc;
+            &>textarea {
+                .whb(100%, 5.5rem, #f7f7f7);
+                border: none;
+                outline: none;
+                font-size: 0.55;
+                &::-webkit-input-placeholder {
+                    color: #aeaeae;
+                    font-size: 0.55rem;
+                }
+            }
+        }
+        .classify-box {
+            .box(horizontal);
+            .whb(100%, 1.7rem, none);
+            padding: 0 1.1rem;
+            border-bottom: 1px solid #dcdcdc;
+            line-height: 1.7rem;
+            .classify {
+                width: 100%;
+                .box(horizontal);
+                font-size: 0.55rem;
+                &>p {
+                    -webkit-box-flex: 1;
+                    color: #343d40;
+                }
+                .classify-choose {
+                    span {
+                        margin-right: 0.3rem;
+                        color: #aeaeae;
+                        text-align: right;
+                    }
+                    .icon {
+                        color: #343d40;
+                    }
+                }
+            }
+        }
+        .addition-box {
+            .box(horizontal);
+            .whb(100%, 1.7rem, none);
+            padding: 0 1.1rem;
+            border-bottom: 1px solid #dcdcdc;
+            line-height: 1.7rem;
+            .addition {
+                .iconfont {
+                    margin-right: 2rem;
+                    font-size: 0.95rem;
+                }
+            }
+        }
+    }
+}
+
+    .choose-classify {
+        .whb(100%,100%,white);
+        .box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &>header {
+            .whb(100%, 2.1rem, none);
+            border-bottom: 1px solid #dcdcdc;
+            .box(horizontal);
+            text-align: center;
+            line-height: 2.1rem;
+            padding: 0 0.6rem;
+            .back {
+                color: #b3b9ba;
+            }
+            &>h5 {
+                font-size: 0.7rem;
+                color: #5c6b6e;
+                -webkit-box-flex: 1;
+            }
+            .confirm {
+                &>button {
+                    .whb(1.8rem, 1.1rem, #1f87e0);
+                    border: none;
+                    outline: none;
+                    line-height: 1.1rem;
+                    border-radius: 0.15rem;
+                    &>a {
+                        font-size: 0.5rem;
+                        color: white;
+                    }
+                }
+            }
+        }
+        &>section {
+            .box;
+            .list {
+                border-bottom: 1px solid #dcdcdc;
+                padding: 0.55rem 0.6rem 0.55rem 1.1rem;
+                .list-name {
+                    width: 100%;
+                    .box(horizontal);
+                    p {
+                        -webkit-box-flex: 1;
+                        font-size: 0.55rem;
+                        color: #343d40;
+                    }
+                    .icon {}
+                }
+                .list-num {
+                    ul {
+                        .box(horizontal);
+                        margin-top: 0.6rem;
+                        li {
+                            margin: 0 1rem 0.5rem 0;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 1.35rem;
+                            a {
+                                .whb(2.65rem, 1.35rem, #eaeaea);
+                                display: inline-block;
+                                border-radius: 0.3rem;
+                                color: #000000;
+                                font-size: 0.55rem;
+                            }
+                            .car_color {
+                                background-color: #1f87e0;
+                                color: white;
+                            }
+                            &:nth-of-type(4) {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+    .hide{
+        display: none;
+    }
+    
