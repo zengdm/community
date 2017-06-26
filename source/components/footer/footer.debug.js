@@ -81,29 +81,29 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function(req
 	__webpack_require__(3);
 	
 
-//	var Footer = function(){
-//		this.init();
-//	};
-//	
-//	Footer.prototype = {
-//		
-//		init:function(){
-//			this.bindEvent();
-//		},
-//		
-//		bindEvent:function(){
+	var Footer = function(){
+		this.init();
+	};
+	
+	Footer.prototype = {
+		
+		init:function(){
+			this.bindEvent();
+		},
+		
+		bindEvent:function(){
 //			var context = this;
 //			
 //			$('.header').on('click',function(){
 //				context.render();
 ////				alert();
 //			});
-//		},
-//		
+		}
+		
 //		render:function(){
-//			$('.header').html('没错，这就是模块header');
+////			$('.header').html('没错，这就是模块header');
 //		}
-//	};
+	};
 	
 	module.exports = Footer;
 }.call(exports, __webpack_require__, exports, module),
@@ -10410,7 +10410,7 @@ exports = module.exports = __webpack_require__(5)(undefined);
 
 
 // module
-exports.push([module.i, ".footer {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  width: 100%;\n  height: 2.6rem;\n  background-color: #ffffff;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  border-bottom: 1px solid #dcdcdc;\n  background: #ffffff url(//i1.dd-img.com/assets/image/1497952298-536c350ff31be95d-640w-19h.png) no-repeat center top;\n  background-size: 100%;\n}\n.footer > dl {\n  margin-top: 0.4rem;\n  padding: 0.4rem 0;\n  text-align: center;\n  -webkit-box-flex: 1;\n  width: 0;\n}\n.footer > dl > dt .icon {\n  font-size: 2rem;\n}\n.footer > dl > dt img {\n  width: 0.8rem;\n  height: auto;\n  background-color: none;\n}\n.footer > dl > dt .add {\n  display: inline-block;\n  width: 2rem;\n  height: 2rem;\n  background-color: #1f87e0;\n  border-radius: 50%;\n  line-height: 2rem;\n  box-sizing: border-box;\n  margin-top: -0.5rem;\n}\n.footer > dl > dt .add .icon {\n  color: white;\n  font-size: 1rem;\n}\n.footer > dl > dd {\n  font-size: 0.5rem;\n  color: #8c8c8c;\n  line-height: 0.8rem;\n}\n.footer > dl .add_color {\n  color: #1f87e0;\n}\n", ""]);
+exports.push([module.i, ".footer {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  width: 100%;\n  height: 2.6rem;\n  background-color: #ffffff;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  border-bottom: 1px solid #dcdcdc;\n  background: #ffffff url(//i1.dd-img.com/assets/image/1498217019-d49850a1e94664ac-640w-17h.png) no-repeat center top;\n  background-size: 100%;\n}\n.footer > dl {\n  margin-top: 0.4rem;\n  padding: 0.4rem 0;\n  text-align: center;\n  -webkit-box-flex: 1;\n  width: 0;\n}\n.footer > dl > dt .icon {\n  font-size: 2rem;\n}\n.footer > dl > dt img {\n  width: 0.8rem;\n  height: auto;\n  background-color: none;\n}\n.footer > dl > dt .add {\n  display: inline-block;\n  width: 2rem;\n  height: 2rem;\n  background-color: #1f87e0;\n  border-radius: 50%;\n  line-height: 2rem;\n  box-sizing: border-box;\n  margin-top: -0.5rem;\n}\n.footer > dl > dt .add .icon {\n  color: white;\n  font-size: 1rem;\n}\n.footer > dl > dd {\n  font-size: 0.5rem;\n  color: #8c8c8c;\n  line-height: 0.8rem;\n}\n.footer > dl .add_color {\n  color: #1f87e0;\n}\n", ""]);
 
 // exports
 

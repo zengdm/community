@@ -142,9 +142,66 @@
   border-bottom: 1px solid #dcdcdc;
   line-height: 1.7rem;
 }
-.main-wrap section .addition-box .addition .iconfont {
+.main-wrap section .addition-box .addition {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main-wrap section .addition-box .addition .addition-upload {
   margin-right: 2rem;
+  position: relative;
+}
+.main-wrap section .addition-box .addition .addition-upload input {
+  opacity: 0;
+  width: 1.1rem;
+  height: 0.85rem;
+  background-color: none;
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+}
+.main-wrap section .addition-box .addition .addition-face {
+  margin-right: 2rem;
+}
+.main-wrap section .addition-box .addition .iconfont {
   font-size: 0.95rem;
+}
+.main-wrap section .upload-box {
+  padding: 0.9rem 0.6rem;
+}
+.main-wrap section .upload-box .upload-picture ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 0;
+}
+.main-wrap section .upload-box .upload-picture ul li {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: none;
+  display: inline-block;
+  margin: 0 0.2rem 0.45rem 0;
+  position: relative;
+}
+.main-wrap section .upload-box .upload-picture ul li .upload-close {
+  width: 0.675rem;
+  height: 0.675rem;
+  background-color: #464646;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 0.675rem;
+}
+.main-wrap section .upload-box .upload-picture ul li .upload-close .icon {
+  font-size: 0.5rem;
+  color: white;
+}
+.main-wrap section .upload-box .upload-picture ul li img {
+  width: 100%;
+  height: auto;
+  background-color: none;
+}
+.main-wrap section .upload-box .upload-picture ul li:nth-of-type(3n) {
+  margin-right: 0;
 }
 .choose-classify {
   width: 100%;

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -147,6 +147,12 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: e:\\community\\source\\font\\iconfont.eot Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -192,7 +198,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(5);
+var	fixUrls = __webpack_require__(10);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -505,303 +511,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-__webpack_require__(3);
-__webpack_require__(6);
-__webpack_require__(8);
-
-// 自由逻辑
-var PostDynamic = __webpack_require__(10);
-var postDynamic = new PostDynamic();
-
-/***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(4);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./post_dynamic.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./post_dynamic.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: 'iconfont';\n  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot');\n  src: url('//assets.diandong.com/mobile/bbs/font/iconfont.eot?#iefix') format('embedded-opentype'), url('//assets.diandong.com/mobile/bbs/font/iconfont.woff') format('woff'), url('//assets.diandong.com/mobile/bbs/font/iconfont.ttf') format('truetype'), url('//assets.diandong.com/mobile/bbs/font/iconfont.svg#iconfont') format('svg');\n}\n.iconfont {\n  font-family: \"iconfont\" !important;\n  font-size: 16px;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -webkit-text-stroke-width: 0.2px;\n  -moz-osx-font-smoothing: grayscale;\n}\n.main-wrap {\n  position: relative;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n}\n.main-wrap header {\n  width: 100%;\n  height: 2.1rem;\n  background-color: none;\n  border-bottom: 1px solid #dcdcdc;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  text-align: center;\n  line-height: 2.1rem;\n}\n.main-wrap header .close {\n  padding: 0 0.6rem;\n}\n.main-wrap header .close .icon {\n  font-size: 0.8rem;\n  color: #909aa3;\n}\n.main-wrap header .choose {\n  -webkit-box-flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.main-wrap header .choose > ul {\n  width: 9.15rem;\n  height: 1.1rem;\n  background-color: none;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  line-height: 1.1rem;\n  border: 1px solid #1f87e0;\n  border-radius: 0.15rem;\n}\n.main-wrap header .choose > ul > li {\n  -webkit-box-flex: 1;\n  border-right: 1px solid #1f87e0;\n}\n.main-wrap header .choose > ul > li:nth-of-type(3) {\n  border: none;\n}\n.main-wrap header .choose > ul > li > a {\n  color: #939698;\n  font-size: 0.55rem;\n}\n.main-wrap header .choose > ul .add_color {\n  background: #1f87e0;\n}\n.main-wrap header .choose > ul .add_color > a {\n  color: white;\n}\n.main-wrap header .issue {\n  padding: 0 0.6rem;\n}\n.main-wrap header .issue > button {\n  width: 1.8rem;\n  height: 1.1rem;\n  background-color: #1f87e0;\n  border: none;\n  outline: none;\n  line-height: 1.1rem;\n  border-radius: 0.15rem;\n}\n.main-wrap header .issue > button > a {\n  font-size: 0.5rem;\n  color: white;\n}\n.main-wrap section {\n  -webkit-box-flex: 1;\n}\n.main-wrap section .write {\n  width: 100%;\n  height: 6.6rem;\n  background-color: #f7f7f7;\n  padding: 0.55rem 0.65rem;\n  border-bottom: 1px solid #dcdcdc;\n}\n.main-wrap section .write > textarea {\n  width: 100%;\n  height: 5.5rem;\n  background-color: #f7f7f7;\n  border: none;\n  outline: none;\n  font-size: 0.55;\n}\n.main-wrap section .write > textarea::-webkit-input-placeholder {\n  color: #aeaeae;\n  font-size: 0.55rem;\n}\n.main-wrap section .classify-box {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  width: 100%;\n  height: 1.7rem;\n  background-color: none;\n  padding: 0 1.1rem;\n  border-bottom: 1px solid #dcdcdc;\n  line-height: 1.7rem;\n}\n.main-wrap section .classify-box .classify {\n  width: 100%;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  font-size: 0.55rem;\n}\n.main-wrap section .classify-box .classify > p {\n  -webkit-box-flex: 1;\n  color: #343d40;\n}\n.main-wrap section .classify-box .classify .classify-choose span {\n  margin-right: 0.3rem;\n  color: #aeaeae;\n  text-align: right;\n}\n.main-wrap section .classify-box .classify .classify-choose .icon {\n  color: #343d40;\n}\n.main-wrap section .addition-box {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  width: 100%;\n  height: 1.7rem;\n  background-color: none;\n  padding: 0 1.1rem;\n  border-bottom: 1px solid #dcdcdc;\n  line-height: 1.7rem;\n}\n.main-wrap section .addition-box .addition .iconfont {\n  margin-right: 2rem;\n  font-size: 0.95rem;\n}\n.choose-classify {\n  width: 100%;\n  height: 100%;\n  background-color: #ffffff;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.choose-classify > header {\n  width: 100%;\n  height: 2.1rem;\n  background-color: none;\n  border-bottom: 1px solid #dcdcdc;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  text-align: center;\n  line-height: 2.1rem;\n  padding: 0 0.6rem;\n}\n.choose-classify > header .back {\n  color: #b3b9ba;\n}\n.choose-classify > header > h5 {\n  font-size: 0.7rem;\n  color: #5c6b6e;\n  -webkit-box-flex: 1;\n}\n.choose-classify > header .confirm > button {\n  width: 1.8rem;\n  height: 1.1rem;\n  background-color: #1f87e0;\n  border: none;\n  outline: none;\n  line-height: 1.1rem;\n  border-radius: 0.15rem;\n}\n.choose-classify > header .confirm > button > a {\n  font-size: 0.5rem;\n  color: white;\n}\n.choose-classify > section {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n}\n.choose-classify > section .list {\n  border-bottom: 1px solid #dcdcdc;\n  padding: 0.55rem 0.6rem 0.55rem 1.1rem;\n}\n.choose-classify > section .list .list-name {\n  width: 100%;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n}\n.choose-classify > section .list .list-name p {\n  -webkit-box-flex: 1;\n  font-size: 0.55rem;\n  color: #343d40;\n}\n.choose-classify > section .list .list-num ul {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  margin-top: 0.6rem;\n}\n.choose-classify > section .list .list-num ul li {\n  margin: 0 1rem 0.5rem 0;\n  display: inline-block;\n  text-align: center;\n  line-height: 1.35rem;\n}\n.choose-classify > section .list .list-num ul li a {\n  width: 2.65rem;\n  height: 1.35rem;\n  background-color: #eaeaea;\n  display: inline-block;\n  border-radius: 0.3rem;\n  color: #000000;\n  font-size: 0.55rem;\n}\n.choose-classify > section .list .list-num ul li .car_color {\n  background-color: #1f87e0;\n  color: white;\n}\n.choose-classify > section .list .list-num ul li:nth-of-type(4) {\n  margin-right: 0;\n}\n.hide {\n  display: none;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(7);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./post_question.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./post_question.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".main-wrap {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n}\n.main-wrap header {\n  width: 100%;\n  height: 2.1rem;\n  background-color: none;\n  border-bottom: 1px solid #dcdcdc;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  text-align: center;\n  line-height: 2.1rem;\n}\n.main-wrap header .close {\n  padding: 0 0.6rem;\n}\n.main-wrap header .close .icon {\n  font-size: 0.8rem;\n  color: #909aa3;\n}\n.main-wrap header .chose {\n  -webkit-box-flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.main-wrap header .chose > ul {\n  width: 9.15rem;\n  height: 1.1rem;\n  background-color: none;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  line-height: 1.1rem;\n  border: 1px solid #1f87e0;\n  border-radius: 0.15rem;\n}\n.main-wrap header .chose > ul > li {\n  -webkit-box-flex: 1;\n  border-right: 1px solid #1f87e0;\n}\n.main-wrap header .chose > ul > li:nth-of-type(3) {\n  border: none;\n}\n.main-wrap header .chose > ul > li > a {\n  color: #939698;\n  font-size: 0.55rem;\n}\n.main-wrap header .chose > ul .add_color {\n  background: #1f87e0;\n}\n.main-wrap header .chose > ul .add_color > a {\n  color: white;\n}\n.main-wrap header .issue {\n  padding: 0 0.6rem;\n}\n.main-wrap header .issue > button {\n  width: 1.8rem;\n  height: 1.1rem;\n  background-color: #1f87e0;\n  border: none;\n  outline: none;\n  line-height: 1.1rem;\n  border-radius: 0.15rem;\n}\n.main-wrap header .issue > button > a {\n  font-size: 0.5rem;\n  color: white;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(9);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(1)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!./post_text.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!./post_text.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".main-wrap {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n}\n.main-wrap header {\n  width: 100%;\n  height: 2.1rem;\n  background-color: none;\n  border-bottom: 1px solid #dcdcdc;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  text-align: center;\n  line-height: 2.1rem;\n}\n.main-wrap header .close {\n  padding: 0 0.6rem;\n}\n.main-wrap header .close .icon {\n  font-size: 0.8rem;\n  color: #909aa3;\n}\n.main-wrap header .chose {\n  -webkit-box-flex: 1;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.main-wrap header .chose > ul {\n  width: 9.15rem;\n  height: 1.1rem;\n  background-color: none;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  line-height: 1.1rem;\n  border: 1px solid #1f87e0;\n  border-radius: 0.15rem;\n}\n.main-wrap header .chose > ul > li {\n  -webkit-box-flex: 1;\n  border-right: 1px solid #1f87e0;\n}\n.main-wrap header .chose > ul > li:nth-of-type(3) {\n  border: none;\n}\n.main-wrap header .chose > ul > li > a {\n  color: #939698;\n  font-size: 0.55rem;\n}\n.main-wrap header .chose > ul .add_color {\n  background: #1f87e0;\n}\n.main-wrap header .chose > ul .add_color > a {\n  color: white;\n}\n.main-wrap header .issue {\n  padding: 0 0.6rem;\n}\n.main-wrap header .issue > button {\n  width: 1.8rem;\n  height: 1.1rem;\n  background-color: #1f87e0;\n  border: none;\n  outline: none;\n  line-height: 1.1rem;\n  border-radius: 0.15rem;\n}\n.main-wrap header .issue > button > a {\n  font-size: 0.5rem;\n  color: white;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require, exports, module) {
-
-	var $ = __webpack_require__(11);
-
-	var PostDynamic = function() {
-		this.init();
-	};
-
-	PostDynamic.prototype = {
-
-		init: function() {
-			this.bindEvent();
-		},
-
-		bindEvent: function() {
-			var context = this;
-
-			$('.classify-choose').on('click', function() {
-				context.choose();
-			});
-			
-			
-			$('.list-name').click(function(){
-				
-				if($(this).siblings().hasClass('fn-hide')){
-					$(this).find('.icon').html('&#xe605;');
-				}else{
-					$(this).find('.icon').html('&#xe606;');
-				}
-				
-				$(this).next().hasClass('fn-hide')?$(this).next().removeClass('fn-hide'):$(this).next().addClass('fn-hide');
-	
-			})
-        	
-		},
-
-		choose: function() {
-			$('.choose-classify').removeClass('hide');
-			$('.main-wrap').addClass('hide');
-		}
-
-	};
-
-
-
-	module.exports = PostDynamic;
-}.call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-/***/ }),
-/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11059,6 +10769,586 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+
+//发帖-动态
+//require('./css/post/post_dynamic.css');
+//require('./css/post/post_question.css');
+//require('./css/post/post_text.css');
+
+//个人中心
+__webpack_require__(5);
+
+  // 模块
+var Footer = __webpack_require__(11);
+var footer = new Footer();
+
+// 自由逻辑
+var PostDynamic = __webpack_require__(14);
+var postDynamic = new PostDynamic();
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(6);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./personal.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./personal.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: \"iconfont\";\n  src: url(" + __webpack_require__(1) + ");\n  src: url(" + __webpack_require__(1) + "#iefix) format('embedded-opentype'),  url(" + __webpack_require__(7) + ") format('woff'),  url(" + __webpack_require__(8) + ") format('truetype'),  url(" + __webpack_require__(9) + "#iconfont) format('svg');\n  \n  /* IE9*/\n  /* iOS 4.1- */\n}\n.iconfont {\n  font-family: \"iconfont\" !important;\n  font-size: 16px;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -webkit-text-stroke-width: 0.2px;\n  -moz-osx-font-smoothing: grayscale;\n}\n.main-wrap {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n}\n.main-wrap > header {\n  width: 100%;\n  height: 6.1rem;\n  background-color: none;\n  background: url(//i1.dd-img.com/assets/image/1498127299-5190a681b43db680-640w-244h.png) no-repeat center center;\n  background-size: 100%;\n  display: flex;\n  justify-content: center;\n  position: relative;\n}\n.main-wrap > header .head-box {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  position: absolute;\n  bottom: -1.3rem;\n}\n.main-wrap > header .head-box .head {\n  -webkit-box-flex: 1;\n  padding: 0 1rem;\n  bottom: -1.4rem;\n}\n.main-wrap > header .head-box .head .head-img {\n  width: 4.4rem;\n  height: 4.4rem;\n  background-color: none;\n  overflow: hidden;\n  position: relative;\n  border: 0.01rem solid #fff;\n  border-radius: 50%;\n}\n.main-wrap > header .head-box .head .head-img > img {\n  width: auto;\n  height: 100%;\n  position: absolute;\n  left: -100%;\n  top: -100%;\n  right: -100%;\n  bottom: -100%;\n  margin: auto;\n}\n.main-wrap > header .head-box .head .sex {\n  width: 1rem;\n  height: 1rem;\n  background-color: none;\n  position: absolute;\n  left: 6.5rem;\n  top: 3.5rem;\n  z-index: 1000;\n}\n.main-wrap > header .head-box .attention,\n.main-wrap > header .head-box .fans {\n  color: white;\n  font-size: 0.6rem;\n  margin-top: 2rem;\n}\n.main-wrap > section {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  width: 100%;\n  height: auto;\n  background-color: #f7f7f7;\n}\n.main-wrap > section .intro {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  width: 100%;\n  height: auto;\n  background-color: #ffffff;\n  text-align: center;\n}\n.main-wrap > section .intro > p {\n  font-size: 0.7rem;\n  color: #000;\n  margin-top: 1.7rem;\n}\n.main-wrap > section .intro .tag {\n  margin-top: 0.5rem;\n}\n.main-wrap > section .intro .tag > button {\n  padding: 0.15rem 0.25rem;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ececec;\n  font-size: 0.45rem;\n  color: #adadad;\n  border-radius: 0.1rem;\n}\n.main-wrap > section .intro .state {\n  margin-top: 0.4rem;\n}\n.main-wrap > section .intro .state > button {\n  width: 5.5rem;\n  height: 1.2rem;\n  background-color: #3595e6;\n  border-radius: 0.1rem;\n  outline: none;\n  border: none;\n  color: white;\n  font-size: 0.45rem;\n}\n.main-wrap > section .intro .state > button .iconfont {\n  font-size: 0.45rem;\n  margin-right: 0.25rem;\n}\n.main-wrap > section .intro .state .state_color {\n  background-color: #bbbdc0;\n}\n.main-wrap > section .new {\n  padding: 0 0.6rem;\n  width: 100%;\n  height: auto;\n  background-color: #ffffff;\n  margin-bottom: 0.5rem;\n}\n.main-wrap > section .new .new-box > header .iconfont {\n  font-size: 0.7rem;\n  color: #289cde;\n}\n.main-wrap > section .new .new-box > header > span {\n  font-size: 0.7rem;\n  color: #343b41;\n}\n.main-wrap > section .new .new-box > section {\n  margin-top: 1.15rem;\n}\n.main-wrap > section .new .new-box > section .time {\n  font-size: 0.5rem;\n  color: #39bcff;\n}\n.main-wrap > section .new .new-box > section > p {\n  color: #343d40;\n  font-size: 0.6rem;\n  line-height: 0.9rem;\n  margin: 0.5rem 0 0.7rem 0;\n}\n.main-wrap > section .new .new-box > section .photos ul {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  font-size: 0;\n}\n.main-wrap > section .new .new-box > section .photos ul li {\n  width: 4.8rem;\n  height: 4.8rem;\n  background-color: none;\n  display: inline-block;\n  margin: 0 0.2rem 0.2rem 0;\n}\n.main-wrap > section .new .new-box > section .photos ul li a img {\n  width: 100%;\n  height: auto;\n  background-color: none;\n}\n.main-wrap > section .new .new-box > section .photos ul li:nth-of-type(3n) {\n  margin-right: 0;\n}\n.main-wrap > section .new .new-box > section .picture {\n  margin-top: 0.5rem;\n  width: 100%;\n  height: auto;\n  background-color: none;\n  position: relative;\n}\n.main-wrap > section .new .new-box > section .picture .picture-photo img {\n  width: 100%;\n  height: auto;\n  background-color: none;\n}\n.main-wrap > section .new .new-box > section .picture .picture-title {\n  width: 100%;\n  height: 1.5rem;\n  background-color: rgba(0, 0, 0, 0.6);\n  position: absolute;\n  bottom: 0;\n  color: #fff;\n  font-size: 0.6rem;\n  line-height: 1.5rem;\n  padding: 0 0.6rem;\n}\n.main-wrap > section .new .new-box > section .feedback {\n  width: 100%;\n  height: 1.9rem;\n  background-color: none;\n  line-height: 1.9rem;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-car {\n  font-size: 0.5rem;\n  color: #939698;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-car span {\n  color: #00a0e9;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-num {\n  -webkit-box-flex: 1;\n  font-size: 0.5rem;\n  color: #939698;\n  margin-left: 1.35rem;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-num span {\n  margin-right: 0.7rem;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-num span .iconfont {\n  font-size: 0.5rem;\n  margin-right: 0.15rem;\n  color: #cccccc;\n}\n.main-wrap > section .new .new-box > section .feedback .feedback-more .iconfont {\n  font-size: 0.5rem;\n  margin-right: 0.15rem;\n  color: #cccccc;\n}\n.main-wrap > section .new .new-box > section .question {\n  margin-top: 0.4rem;\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n}\n.main-wrap > section .new .new-box > section .question .question-img {\n  width: 1.6rem;\n  height: 1.45rem;\n  background-color: none;\n}\n.main-wrap > section .new .new-box > section .question .question-img img {\n  width: 100%;\n  height: auto;\n  background-color: none;\n}\n.main-wrap > section .new .new-box > section .question .question-title {\n  margin-left: 0.7rem;\n  -webkit-box-flex: 1;\n  font-size: 0.6rem;\n  color: #000;\n  line-height: 0.9rem;\n}\n.main-wrap > section .new .new-box > section .answer {\n  margin-top: 0.4rem;\n  margin-left: 2.3rem;\n}\n.main-wrap > section .new .new-box > section .answer .answer-character {\n  width: 12.35rem;\n  height: auto;\n  background-color: #f2f2f2;\n  padding: 0.4rem 0.6rem;\n}\n.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box {\n  font-size: 0.525rem;\n  line-height: 0.9rem;\n  color: #797f81;\n}\n.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box span {\n  color: #000;\n}\n.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box span i {\n  font-style: normal;\n}\n.main-wrap > section .new .new-box > section .answer .answer-feedback {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  line-height: 1.9rem;\n}\n.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-from {\n  -webkit-box-flex: 1;\n  font-size: 0.5rem;\n  color: #939698;\n}\n.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-from span {\n  color: #00a0e9;\n}\n.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-num {\n  font-size: 0.5rem;\n  color: #939698;\n  margin-right: 0.2rem;\n}\n.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-num .iconfont {\n  font-size: 0.5rem;\n  margin-right: 0.3rem;\n  color: #cccccc;\n}\n.main-wrap > section .loading {\n  width: 100%;\n  height: auto;\n  background-color: none;\n  text-align: center;\n}\n.main-wrap .end {\n  height: 3.4rem;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: e:\\community\\source\\font\\iconfont.woff Unexpected character '\u0000' (1:4)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: e:\\community\\source\\font\\iconfont.ttf Unexpected character '\u0000' (1:0)\nYou may need an appropriate loader to handle this file type.\n(Source code omitted for this binary file)");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: e:\\community\\source\\font\\iconfont.svg Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <?xml version=\"1.0\" standalone=\"no\"?>\n| <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\" >\n| <svg xmlns=\"http://www.w3.org/2000/svg\">");
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require,exports,module){
+	var $ = __webpack_require__(3);
+	
+	__webpack_require__(12);
+	
+
+	var Footer = function(){
+		this.init();
+	};
+	
+	Footer.prototype = {
+		
+		init:function(){
+			this.bindEvent();
+		},
+		
+		bindEvent:function(){
+//			var context = this;
+//			
+//			$('.header').on('click',function(){
+//				context.render();
+////				alert();
+//			});
+		}
+		
+//		render:function(){
+////			$('.header').html('没错，这就是模块header');
+//		}
+	};
+	
+	module.exports = Footer;
+}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(13);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(2)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!./footer.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!./footer.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".footer {\n  display: -webkit-box;\n  -webkit-box-orient: horizontal;\n  width: 100%;\n  height: 2.6rem;\n  background-color: #ffffff;\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  border-bottom: 1px solid #dcdcdc;\n  background: #ffffff url(//i1.dd-img.com/assets/image/1498217019-d49850a1e94664ac-640w-17h.png) no-repeat center top;\n  background-size: 100%;\n}\n.footer > dl {\n  margin-top: 0.4rem;\n  padding: 0.4rem 0;\n  text-align: center;\n  -webkit-box-flex: 1;\n  width: 0;\n}\n.footer > dl > dt .icon {\n  font-size: 2rem;\n}\n.footer > dl > dt img {\n  width: 0.8rem;\n  height: auto;\n  background-color: none;\n}\n.footer > dl > dt .add {\n  display: inline-block;\n  width: 2rem;\n  height: 2rem;\n  background-color: #1f87e0;\n  border-radius: 50%;\n  line-height: 2rem;\n  box-sizing: border-box;\n  margin-top: -0.5rem;\n}\n.footer > dl > dt .add .icon {\n  color: white;\n  font-size: 1rem;\n}\n.footer > dl > dd {\n  font-size: 0.5rem;\n  color: #8c8c8c;\n  line-height: 0.8rem;\n}\n.footer > dl .add_color {\n  color: #1f87e0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function(require, exports, module) {
+
+	var $ = __webpack_require__(3);
+	
+
+	var PostDynamic = function() {
+		this.init();
+	};
+
+	PostDynamic.prototype = {
+
+		init: function() {
+			this.bindEvent();
+		},
+
+		bindEvent: function() {
+			var context = this;
+
+			$('.classify-choose').on('click', function() {
+				context.choose();
+			});
+
+
+			$('.list-name').click(function() {
+				
+				if($(this).siblings().hasClass('fn-hide')) {
+					$(this).find('.icon').html('&#xe605;');
+				} else {
+					$(this).find('.icon').html('&#xe606;');
+				}
+
+				$(this).next().hasClass('fn-hide') ? $(this).next().removeClass('fn-hide') : $(this).next().addClass('fn-hide');
+
+			});
+
+			
+			var list_val;
+			$('.list-num>ul>li').on('click', 'a', function(e) {
+				var e = e || window.event;
+				e.preventDefault();
+				$('.list-num>ul>li>a').removeClass('car_color');
+				$(this).addClass('car_color').siblings('a').removeClass('car_color');
+				list_val = $.trim($(this).text());
+			})
+			$('.confirm>button').on('click', 'a', function() {
+				$('.main-wrap').removeClass('hide');
+				$('.choose-classify').addClass('hide');
+				$('.classify-choose>span').text(list_val);
+			});
+			
+			
+//			图片上传
+			$('.addition-upload-box').on('click', function() {
+             		context.addcoverpicture();
+                $(".headpicinput_1").change(function(e) {
+                    that.UpLoad();
+                });
+            });
+			
+			
+
+		},
+
+		choose: function() {
+			$('.choose-classify').removeClass('hide');
+			$('.main-wrap').addClass('hide');
+		},
+		
+		addcoverpicture: function() {
+            var that = this;
+            var picturehtml = "";
+//          var base64 = $('.base').attr('data-base');
+//          var imgUrlInput = $('.imgUrl').val();
+//          var dataId = $('.addcover-picture').attr('addval');
+            picturehtml += '<div class="upload-box">'+
+            '<div class="upload-picture">'+
+            '<ul>'+
+            '<li><a href=""><img src="//i1.dd-img.com/assets/image/1498455579-eb2eadd2969682a5-192w-192h.png" /></a>'+
+            '<div class="upload-close"><i class="icon">&#xe601;</i></div></li>'+
+            '<li><a href=""><img src="//i1.dd-img.com/assets/image/1498456024-71597723b227aa1f-192w-192h.png" /></a></li>'+
+            '<li><a href=""><img src="//i1.dd-img.com/assets/image/1498456024-9ad9a6ae70d3ec6b-192w-192h.png" /></a></li>'+
+            '<li><a href=""><img src="//i1.dd-img.com/assets/image/1498455579-f82385c83d1738e1-192w-192h.png" /></a>'+
+            '<div class="upload-close"><i class="icon">&#xe601;</i></div></li>'+
+            '</ul></div></div>';
+            $('.addition-box').after(picturehtml);
+        },
+		
+		UpLoad: function(e) {
+            var that = this;
+            var f = document.querySelector("#headpicinput_1").files[0];
+            fileType = f.type;
+            var baseBox = $('.base');
+            var imgUrlInput = $('.imgUrl');
+            var Orientation = '';
+            if (/image\/\w+/.test(fileType)) {
+                var fileReader = new FileReader();
+                EXIF.getData(f, function() {
+                    // alert(EXIF.pretty(this));  
+                    EXIF.getAllTags(this);
+                    //alert(EXIF.getTag(this, 'Orientation'));   
+                    Orientation = EXIF.getTag(this, 'Orientation');
+                });
+
+                fileReader.readAsDataURL(f);
+
+                fileReader.onload = function(event) {
+                    var result = event.target.result; //返回的dataURL
+                    // var image = new Image();
+
+                    // image.src = result;
+                    //若图片大小大于1M，压缩后再上传，否则直接上传
+
+                    var maxW = 1200;
+                    var maxH = 1000;
+                    var rat = maxW / maxH;
+
+                    var image = new Image();
+                    image.src = result; //;e.target.result;  
+                    image.onload = function() {
+                        var expectWidth = this.naturalWidth;
+                        var expectHeight = this.naturalHeight;
+
+                        if (this.naturalWidth > this.naturalHeight && this.naturalWidth > maxW) {
+                            expectWidth = maxW;
+                            expectHeight = expectWidth * this.naturalHeight / this.naturalWidth;
+                        } else if (this.naturalHeight > this.naturalWidth && this.naturalHeight > maxH) {
+                            expectHeight = maxH;
+                            expectWidth = expectHeight * this.naturalWidth / this.naturalHeight;
+                        }
+                        var canvas = document.createElement("canvas");
+                        var ctx = canvas.getContext("2d");
+                        canvas.width = expectWidth;
+                        canvas.height = expectHeight;
+                        //console.log(canvas.width+':'+canvas.height);
+                        ctx.drawImage(this, 0, 0, expectWidth, expectHeight);
+                        var base64 = null;
+                        //修复ios  
+                        if (navigator.userAgent.match(/iphone/i)) {
+                            //console.log('iphone');  
+                            //alert(expectWidth + ',' + expectHeight);  
+                            //如果方向角不为1，都需要进行旋转 added by lzk  
+                            if (Orientation != "" && Orientation != 1) {
+                                //alert('旋转处理');  
+                                switch (Orientation) {
+                                    case 6: //需要顺时针（向左）90度旋转  
+                                        //alert('需要顺时针（向左）90度旋转');  
+                                        that.rotateImg(this, 'left', canvas);
+                                        break;
+                                    case 8: //需要逆时针（向右）90度旋转  
+                                        //alert('需要顺时针（向右）90度旋转');  
+                                        that.rotateImg(this, 'right', canvas);
+                                        break;
+                                    case 3: //需要180度旋转  
+                                        //alert('需要180度旋转');  
+                                        that.rotateImg(this, 'right', canvas); //转两次  
+                                        that.rotateImg(this, 'right', canvas);
+                                        break;
+                                }
+                            }
+                            base64 = canvas.toDataURL(fileType, 0.8);
+                        } else if (navigator.userAgent.match(/Android/i)) { // 修复android  
+                            var canvas = document.getElementById("canvas");
+                            canvas.width = this.width;
+                            canvas.height = this.height; //计算等比缩小后图片宽高
+                            var ctx = canvas.getContext('2d');
+                            var expectHeight = this.naturalHeight;
+                            console.log(canvas.width + '/' + canvas.height);
+                            //等比压缩
+                            if (canvas.width / canvas.height > rat) {
+                                if (canvas.width > maxW) {
+                                    canvas.width = maxW;
+                                    canvas.height = parseInt((canvas.height * maxW) / this.width);
+                                }
+                            } else {
+                                if (canvas.height > maxH) {
+                                    canvas.height = maxH;
+                                    canvas.width = parseInt((canvas.width * maxH) / this.height);
+                                } else {
+
+                                }
+                            }
+                            console.log(canvas.width + '=>' + canvas.height);
+                            ctx.drawImage(this, 0, 0, canvas.width, canvas.height);
+                            base64 = canvas.toDataURL(fileType, 0.8); //重新生成图片
+                            // var encoder = new JPEGEncoder();  
+                            // base64 = encoder.encode(ctx.getImageData(0, 0, expectWidth, expectHeight), 80);  
+                        } else {
+                            //alert(Orientation);  
+                            if (Orientation != "" && Orientation != 1) {
+                                //alert('旋转处理');  
+                                switch (Orientation) {
+                                    case 6: //需要顺时针（向左）90度旋转  
+                                        //alert('需要顺时针（向左）90度旋转');  
+                                        that.rotateImg(this, 'left', canvas);
+                                        break;
+                                    case 8: //需要逆时针（向右）90度旋转  
+                                        //alert('需要顺时针（向右）90度旋转');  
+                                        that.rotateImg(this, 'right', canvas);
+                                        break;
+                                    case 3: //需要180度旋转  
+                                        //alert('需要180度旋转');  
+                                        that.rotateImg(this, 'right', canvas); //转两次  
+                                        that.rotateImg(this, 'right', canvas);
+                                        break;
+                                }
+                            }
+
+                            base64 = canvas.toDataURL(fileType, 0.8);
+
+                        }
+                        var postData = base64.replace("data:" + fileType + ";base64,", '');
+                        // 图片赋值
+                         preViewImg.attr("src", base64);  
+
+
+                        that.addcoverpicture();
+
+
+                        $.post('/live/ajax/', {
+                            opt: 'upload',
+                            base64Img: postData,
+                            fileType: fileType,
+                            rnd: Math.random()
+                        }, function(result) {
+                            if (result.match("^\{(.+:.+,*){1,}\}$")) {
+                                result = $.parseJSON(result);
+                                if (result.code == 200) {
+                                    imgUrlInput.val(result.data);
+                                    //preViewImg.attr('src', result.data);
+                                } else {
+                                    alert(result.msg);
+                                }
+                            } else {
+                                alert('上传出错, 返回格式不正确');
+                            }
+                        });
+                    };
+
+                }
+            } else {
+                alert("请选择图片");
+            }
+        },
+
+        //对图片旋转处理 added by lzk  
+        rotateImg: function(img, direction, canvas) {
+            //alert(img);  
+            //最小与最大旋转方向，图片旋转4次后回到原方向    
+            var min_step = 0;
+            var max_step = 3;
+            //var img = document.getElementById(pid);    
+            if (img == null) return;
+            //img的高度和宽度不能在img元素隐藏后获取，否则会出错    
+            var height = img.height;
+            var width = img.width;
+            //var step = img.getAttribute('step');    
+            var step = 2;
+            if (step == null) {
+                step = min_step;
+            }
+            if (direction == 'right') {
+                step++;
+                //旋转到原位置，即超过最大值    
+                step > max_step && (step = min_step);
+            } else {
+                step--;
+                step < min_step && (step = max_step);
+            }
+            //img.setAttribute('step', step);    
+            var canvas = document.getElementById('pic_' + pid);
+            if (canvas == null) {
+                img.style.display = 'none';
+                canvas = document.createElement('canvas');
+                canvas.setAttribute('id', 'pic_' + pid);
+                img.parentNode.appendChild(canvas);
+            }
+            //旋转角度以弧度值为参数    
+            var degree = step * 90 * Math.PI / 180;
+            var ctx = canvas.getContext('2d');
+            switch (step) {
+                case 0:
+                    canvas.width = width;
+                    canvas.height = height;
+                    ctx.drawImage(img, 0, 0);
+                    break;
+                case 1:
+                    canvas.width = height;
+                    canvas.height = width;
+                    ctx.rotate(degree);
+                    ctx.drawImage(img, 0, -height);
+                    break;
+                case 2:
+                    canvas.width = width;
+                    canvas.height = height;
+                    ctx.rotate(degree);
+                    ctx.drawImage(img, -width, -height);
+                    break;
+                case 3:
+                    canvas.width = height;
+                    canvas.height = width;
+                    ctx.rotate(degree);
+                    ctx.drawImage(img, -width, 0);
+                    break;
+            }
+        }
+
+	};
+
+	module.exports = PostDynamic;
+}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ })
 /******/ ]);

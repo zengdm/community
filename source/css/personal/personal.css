@@ -106,7 +106,7 @@
   border-radius: 0.1rem;
 }
 .main-wrap > section .intro .state {
-  margin: 0.4rem 0 1.7rem 0;
+  margin-top: 0.4rem;
 }
 .main-wrap > section .intro .state > button {
   width: 5.5rem;
@@ -121,6 +121,9 @@
 .main-wrap > section .intro .state > button .iconfont {
   font-size: 0.45rem;
   margin-right: 0.25rem;
+}
+.main-wrap > section .intro .state .state_color {
+  background-color: #bbbdc0;
 }
 .main-wrap > section .new {
   padding: 0 0.6rem;
@@ -141,7 +144,7 @@
   margin-top: 1.15rem;
 }
 .main-wrap > section .new .new-box > section .time {
-  font-size: 0.45rem;
+  font-size: 0.5rem;
   color: #39bcff;
 }
 .main-wrap > section .new .new-box > section > p {
@@ -210,7 +213,7 @@
 }
 .main-wrap > section .new .new-box > section .feedback .feedback-num {
   -webkit-box-flex: 1;
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   color: #939698;
   margin-left: 1.35rem;
 }
@@ -218,14 +221,86 @@
   margin-right: 0.7rem;
 }
 .main-wrap > section .new .new-box > section .feedback .feedback-num span .iconfont {
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   margin-right: 0.15rem;
   color: #cccccc;
 }
 .main-wrap > section .new .new-box > section .feedback .feedback-more .iconfont {
-  font-size: 0.4rem;
+  font-size: 0.5rem;
   margin-right: 0.15rem;
   color: #cccccc;
+}
+.main-wrap > section .new .new-box > section .question {
+  margin-top: 0.4rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.main-wrap > section .new .new-box > section .question .question-img {
+  width: 1.6rem;
+  height: 1.45rem;
+  background-color: none;
+}
+.main-wrap > section .new .new-box > section .question .question-img img {
+  width: 100%;
+  height: auto;
+  background-color: none;
+}
+.main-wrap > section .new .new-box > section .question .question-title {
+  margin-left: 0.7rem;
+  -webkit-box-flex: 1;
+  font-size: 0.6rem;
+  color: #000;
+  line-height: 0.9rem;
+}
+.main-wrap > section .new .new-box > section .answer {
+  margin-top: 0.4rem;
+  margin-left: 2.3rem;
+}
+.main-wrap > section .new .new-box > section .answer .answer-character {
+  width: 12.35rem;
+  height: auto;
+  background-color: #f2f2f2;
+  padding: 0.4rem 0.6rem;
+}
+.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box {
+  font-size: 0.525rem;
+  line-height: 0.9rem;
+  color: #797f81;
+}
+.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box span {
+  color: #000;
+}
+.main-wrap > section .new .new-box > section .answer .answer-character .answer-character-box span i {
+  font-style: normal;
+}
+.main-wrap > section .new .new-box > section .answer .answer-feedback {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 1.9rem;
+}
+.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-from {
+  -webkit-box-flex: 1;
+  font-size: 0.5rem;
+  color: #939698;
+}
+.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-from span {
+  color: #00a0e9;
+}
+.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-num {
+  font-size: 0.5rem;
+  color: #939698;
+  margin-right: 0.2rem;
+}
+.main-wrap > section .new .new-box > section .answer .answer-feedback .answer-feedback-num .iconfont {
+  font-size: 0.5rem;
+  margin-right: 0.3rem;
+  color: #cccccc;
+}
+.main-wrap > section .loading {
+  width: 100%;
+  height: auto;
+  background-color: none;
+  text-align: center;
 }
 .main-wrap .end {
   height: 3.4rem;
