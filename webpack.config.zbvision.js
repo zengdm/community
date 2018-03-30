@@ -4,18 +4,16 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 
-	entry: {
-		    // post_dynamic: path.resolve(__dirname, 'source/app.js')
-		post_text: path.resolve(__dirname, 'source/app.js')
+    entry: {
+    zbvision: path.resolve(__dirname, 'source/app.js')
+    },
 
-	},
+    output: {
+        path: path.resolve(__dirname, 'build/zbvision'),
+        filename: '[name].debug.js'
+    },
 
-	output: {
-		path: path.resolve(__dirname, 'build/post'),
-		filename: '[name].debug.js'
-	},
-
-	module: {
+    module: {
         rules: [
 	        {
 	            test: /\.css$/,
@@ -26,16 +24,15 @@ module.exports = {
 	        }
 	    ]
     },
-
-	resolve: {
-		alias: {
-			swiper: path.resolve(__dirname, 'source/lib/swiper/idangerous.swiper.min'),
-			cookie: path.resolve(__dirname, 'source/lib/cookie/cookie.js')
-		}
-	},
-	
-	plugins: [
+    
+    resolve: {
+        alias: {
+            swiper: path.resolve(__dirname, 'source/lib/swiper/idangerous.swiper.min'),
+          
+        }
+    },
+    
+    plugins: [
         new ExtractTextPlugin('[name].debug.css'),
-   	]
-
+    ]
 };
